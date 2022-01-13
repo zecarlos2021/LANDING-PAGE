@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="venha ver isso">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/efect.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./olho/eye.css">
+    
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-img" src="./imagens/ft-ze.jpg" alt="">
+        <nav class="cabecalho-menu navigation cabeçalho">
+
+            <ul class="cabecalho-menu-item">
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="videocam-outline"></ion-icon>
+                        </span>
+                        <span class="text">Tutorial</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">comunidade</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="text">open source</span>
+                    </a>
+                </li>
+                
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+
+
+        </nav>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                
+                <h1 contenteditable spellcheck="false" 
+                class="titulo">Zé bot</h1>
+                <h2 class="sub-titulo">Deixe a sua comunidade segura de um jeito fácil</h2>
+                <button    class="butao" > <a  href="#"target="blank">Me adicione</a> </button>
+            </div>
+            <div class="face">
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+            </div>
+            <div class="peito">
+               <div class="caixas">
+                   <div class="butoes b1"></div>
+                   <div class="butoes b2"></div>
+                   <div class="butoes b3 "></div>
+                   
+               </div> 
+            </div>
+            <img id="loading" class="imagem" src="./imagens/ze bot.svg" alt="imagem da balle bot">
+            
+
+        </section>
+
+        <section class="conteudo-secundario">
+            <h3 class="titulo-2">O que ela faz por você?</h3>
+            <p class="secundario-paragrafo">1. Cria um sistema de verificação capcha para novos membros garantirem que
+                não são robôs</p>
+            <p class="secundario-paragrafo">1. Cria um sistema de verificação capcha para novos membros garantirem que
+                não são robôs</p>
+            <p class="secundario-paragrafo">3. Sistema de avisos e banimento manual, para pessoas administradoras
+                utilizarem</p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <h2 class="roda-ze ze1">Zé Carlos</h2>
+        <h3 class="roda-ze zefn">Front End</h3>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./olho/eye.js"></script>
+
+    <script>let list = document.querySelectorAll('.list');
+        function setActiveclass(){
+            list.forEach((item) =>
+            item.classList.remove('active'))
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('mouseover' , setActiveclass))</script>
+</body>
+
+</html>
