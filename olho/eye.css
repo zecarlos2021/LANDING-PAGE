@@ -1,6 +1,6 @@
 .face {
     display: flex;
-    left: 37.5%;
+    left: 33.5%;
     top: -22px;
     position: relative;
     width: 100px;
@@ -66,7 +66,7 @@
 
 .peito {
     display: flex;
-    left: 22.05%;
+    left: 21.05%;
     top: 75px;
     position: relative;
     width: 53px;
